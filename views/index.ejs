@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/stylesheets/style.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Cars</th>
+                        <th>Color</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% cars.forEach(car=>{%>
+                        <tr>
+                            <td>
+                                picture;lqhtthohdjdjdjdjjrowljnwongongqonqoqongoq
+                            </td>
+                            <td>
+                                <%=car.model %>
+                            </td>
+                            <td>
+                                <%=car.color %>
+                            </td>
+                            <td>
+                                <%=car.price %>
+                            </td>
+                            <td>remove </td>
+                        </tr><%})%>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

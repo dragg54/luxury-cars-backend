@@ -1,0 +1,16 @@
+const express = require("express")
+const ejs = require("ejs")
+const connectDb = require("./connection/Connection")
+const dotenv = require("dotenv")
+const bodyParser = require("body-parser")
+
+const app = express()
+connectDb()
+app.set("view engine", "ejs")
+app.use(bodyParser.urlencoded({extended: true}))
+dotenv.config({path: ".env"})
+app.use("/", require("./routes/CarRouter"))
+app.use("/assets", express.static("assets/"))
+app.listen(3000, ()=>{
+    console.log("listening to port 3000")
+})

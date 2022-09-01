@@ -1,0 +1,98 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    color: yellow
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+.table-container{
+    width: 100%;
+    background-color: white;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+table{
+    width: 90%;
+    background-color: rgba(255, 165,0, 0.3);
+    margin-top: 50px;
+}
+
+tr{
+    height: 90px;
+}
+
+th{
+    opacity: 0.6;
+    padding: 30px 50px;
+}
+thead{
+    background-color: orangered;
+    color: white;
+    width: 100%;
+}
+
+td{
+    padding: 30px 40px
+}
+
+tbody{
+    color: black;
+    opacity: 0.7;
+}
+
+.add-car-container{
+    padding: 30px;
+    width: 40%;
+    margin: 50px auto;
+    background-color: darkgoldenrod;
+    height: 1100px;
+    position: relative;
+}
+
+input{
+    width: 370px;
+    margin: 20px 0px;
+    height: 30px;
+    background-color: #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px gray;
+    border: none;
+    outline: none;
+    padding: 6px
+}
+
+label{
+    color: #e5e5e5;
+    opacity: 0.7
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #e5e5e5;
+    color: black;
+    opacity: 0.7;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px gray;
+    border: none;
+    position: absolute;
+    right: 80px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    color:orangered;
+    opacity: 0.5;
+}
