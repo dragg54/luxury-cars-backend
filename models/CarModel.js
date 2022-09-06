@@ -43,8 +43,12 @@ const CarSchema = new mongoose.Schema({
   },
   transmission: {
     type: String,
-    required: false,
+    required: true,
   },
+  carImage:{
+    data: Buffer,
+    type: String
+  }
 });
 const CarDb = mongoose.model("cars", CarSchema)
 module.exports = {
